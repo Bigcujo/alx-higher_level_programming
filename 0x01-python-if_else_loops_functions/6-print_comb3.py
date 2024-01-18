@@ -4,4 +4,4 @@ for first in range(0, 10):
         if first == 8 and second == 9:
             print(89)
         elif first < 9 and second <= 9:
-            print("{:d}{:d}".format(first, second), end = ", ")
+            print("{:d}{:d}".format(first, second), end=", ")
