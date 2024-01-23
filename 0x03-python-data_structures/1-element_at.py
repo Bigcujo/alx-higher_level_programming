@@ -5,4 +5,3 @@ def element_at(my_lists, idx):
     elif idx >= len(my_lists):
         return None
     return my_lists[idx]
-
