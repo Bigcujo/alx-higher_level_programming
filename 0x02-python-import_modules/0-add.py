@@ -4,6 +4,6 @@ if __name__ == "__main__":
     a = 1
     b = 2
     
-    results = add(a,b)
+    results = add(a, b)
 
     print("{} + {} = {}".format(a, b, results))
