@@ -3,10 +3,12 @@ if __name__ == "__main__":
     from sys import argv
 
     argc = len(argv) - 1
-    plural = 's' if argc != 1 else ''
-    colon = ':' if argc != 0 else '.'
+    if argc == 0:
+        print("0 arguments.")
+    elif argc == 1:
+        print("1 argument:")
+    else:
+        print("{} arguments:".format(argc))
+    for i in range(argc):
+        print("{}: {}".format(i + 1, argv[i + 1 ]))
 
-    print("{} argument{}{}{}".format(argc, plural, colon, '\n' if argc else ''))
-
-    for i in range(1, argc + 1):
-        print("{}: {}".format(i, argv[i]))
