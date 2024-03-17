@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import calculator_1
+from calculator_1 import *
 def add(a, b):
     return (a + b)
 
