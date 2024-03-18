@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("#pythoniscool")
+write = getattr(__import__('sys', fromlist=['stdout']), 'stdout').write; write("#pythoniscool\n")
+
