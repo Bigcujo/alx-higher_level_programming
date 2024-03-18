@@ -1,3 +1,3 @@
 import string
-getattr(__import__('sys', fromlist=['stdout']), 'stdout').write(getattr(string, 'ascii_uppercase'))
+print(*string.ascii_uppercase, sep=" ", end="\n")
 "this will print out uppercase alphabets"
