@@ -1,3 +1,4 @@
+"this will print the magic charater"
 def magic_calculation(a, b):
     add = __import__('magic_calculation_102', globals(), locals(), ['add'], 0).__dict__['add']
     sub = __import__('magic_calculation_102', globals(), locals(), ['sub'], 0).__dict__['sub']
