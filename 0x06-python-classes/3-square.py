@@ -7,10 +7,10 @@ class Square:
     """ This will be for my class named Square"""
     def __init__(self, size=0):
 
-    """
-    Args:
-    size (int) : this is for the size of the square.
-    """
+        """
+        Args:
+        size (int) : this is for the size of the square.
+        """
      
      if not isinstance(size, int):
          raise TypeError("size must be an integer")
