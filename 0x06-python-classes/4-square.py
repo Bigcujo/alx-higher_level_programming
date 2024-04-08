@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 
 """State a class Square"""
 
@@ -14,13 +14,13 @@ class Square:
         """
         self.size = size
 
-        @get.size
+    @property
 
     def size(self):
             """ Get the current size of the square"""
             return (self.__size)
 
-        @size.setter
+    @size.setter
     
     def size(self, value):
         if not isinstance(value, int):
