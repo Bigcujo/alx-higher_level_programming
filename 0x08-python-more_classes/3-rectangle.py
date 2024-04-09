@@ -1,35 +1,35 @@
 #!/usr/bin/python3
-"""Defines a rectanle class."""
+"""Defines a rectangle class."""
 
-class Recatngle:
+class Rectangle:
     """Represent the rectangle."""
 
     def __init__(self, width=0, height=0):
-        """initialize a new rectangle. 
+        """Initialize a new rectangle. 
 
         Args:
             width : The width of the new rectangle.
-            height: the height of the new rectangle
+            height: The height of the new rectangle
         """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """get the width os the rectangle."""
+        """Get the width of the rectangle."""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
-            rasie ValueError("width must be >= 0")
-        self._width =value
+            raise ValueError("width must be >= 0")
+        self.__width = value
 
     @property
     def height(self):
-        """get method for height of the rectangle"""
+        """Get the height of the rectangle."""
         return self.__height
 
     @height.setter
@@ -41,22 +41,26 @@ class Recatngle:
         self.__height = value
 
     def area(self):
-        """Return the area of the rectangle"""
-        return (self.__width * 2) + (self.__height * 2))
+        """Return the area of the rectangle."""
+        return (self.__width * self.__height)
+
+    def perimeter(self):
+        """Return the perimeter of the rectangle."""
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """Return the printable structure of the rectangle
+        """Return the printable structure of the rectangle.
 
-        represents the rectangele with the £ character.
+        Represents the rectangle with the '#' character.
         """
-
         if self.__width == 0 or self.__height == 0:
-            return ("")
-
+            return ""
         shape = []
         for s in range(self.__height):
             [shape.append('#') for d in range(self.__width)]
             if s != self.__height - 1:
                 shape.append("\n")
-        return ("".join(shape))
+        return "".join(shape)
 
