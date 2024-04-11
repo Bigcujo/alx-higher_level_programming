@@ -36,10 +36,10 @@ class Rectangle:
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
-            rasie TypeError("height must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-            rasie ValueError("height must be >= 0")
-            self.__height = value
+            raise ValueError("height must be >= 0")
+        self.__height = value
 
     def perimeter(self):
         """Return the perimeter of the Rectangle"""
