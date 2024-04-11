@@ -13,6 +13,8 @@ class Rectangle:
             height(int): the height of the new rectangle.
 
             """
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -47,22 +49,22 @@ class Rectangle:
 
     def perimeter(self):
         """Return the perimeter of the rectangle."""
-        if self.__width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return (0)
-        return ((self.width * 2) + (self.height * 2))
+        return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
         """retuns the the visible part of the rectangle.
 
         and it will represt it with the # charater."""
 
-        if self.__width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ("")
 
         rect = []
-        for j in range(self.height):
-            [rect.append('#') for d in range(self._width)]
-            if j != self._height - 1:
+        for j in range(self.__height):
+            [rect.append('#') for d in range(self.__width)]
+            if j != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
 
