@@ -82,10 +82,10 @@ class Rectangle:
         rect1: this is the first instance 
         rect2: this will be the second instance
         """
-        if not isinstance(rect1, Rectangle):
+        if not isinstance(rect_1, Rectangle):
             raise TypeError("rect1 must be an instance of Rectangle")
-        if not isinstance(rect2, Rectangle):
+        if not isinstance(rect_2, Rectangle):
             raise TypeError("rect2 must be an instance of Rectangle")
-        if rect1.area() >= rect2.area():
+        if rect_1.area() >= rect_2.area():
             return (rect_1)
         return (rect_2)
