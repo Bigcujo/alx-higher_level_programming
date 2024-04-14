@@ -42,7 +42,7 @@ Similarly, no spaces are printed at the end of each printed line.
     >>> text_indentation("    hello cujo.    how are you.   ")
     hello cujo.
     <BLANKLINE>
-    how  are you.
+    how are you.
     <BLANKLINE>
 
 New lines are only printed for the characters ``.``, ``?``, and ``:`` -
