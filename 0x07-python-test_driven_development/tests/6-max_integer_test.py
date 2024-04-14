@@ -21,7 +21,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_max_at_begginning(self):
         """Test a list with a beginning max value."""
-        max_at_beginning = [10, 11, 13, 14]
+        max_at_beginning = [14, 11, 13, 10]
         self.assertEqual(max_integer(max_at_beginning), 14)
 
     def test_empty_list(self):
