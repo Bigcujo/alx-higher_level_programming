@@ -6,4 +6,5 @@ class MyList(list):
     '''my local MyList class.'''
     def print_sorted(self):
         '''Method with the sorted function to print out the sorted list.'''
-        print(sorted(self))
+       sorted_lists = sorted(self)
+       print(sorted_lists)
