@@ -32,7 +32,7 @@ print_sorted method called with 1 arg:
     TypeError: print_sorted() takes 1 positional argument but 2 were given
 
 print_sorted method called with 2 args:
-    >>> ml.print_sorted([2, 5, 1], 7)
+    >>> gl.print_sorted([2, 5, 1], 7)
     Traceback (most recent call last):
     TypeError: print_sorted() takes 1 positional argument but 3 were given
 
