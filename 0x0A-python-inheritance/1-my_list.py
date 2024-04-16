@@ -1,10 +1,10 @@
-#!/usr/bin/pyhton3
-'''Module for MyList class.'''
+#!/usr/bin/python3
+'''Module for Mylist class.'''
+
 
 class MyList(list):
-    '''A custom subclass of the built-in list class.'''
-    
+    '''Custom Mylist class.'''
     def print_sorted(self):
-        '''Prints the elements of the list in sorted order.'''
-        sorted_list = sorted(self)
-        print(sorted_list)
+        '''This prints out the list in a sorted manner'''
+       sorted_lists = sorted(self)
+       print(sorted_lists)
