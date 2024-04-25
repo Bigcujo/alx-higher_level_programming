@@ -100,3 +100,10 @@ class Rectangle(Base):
         """
         area = self.width * self.height
         return area
+
+    def display(self):
+        """
+        this will be for the display method
+        """
+        for r in range(self.height):
+            print("#" * self..width)
