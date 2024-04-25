@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-this will be for the rectangele class.
+Rectanlge module.
 """
 from models.base import Base
 
