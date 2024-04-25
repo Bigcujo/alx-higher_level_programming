@@ -105,8 +105,10 @@ class Rectangle(Base):
         """
         this will be for the display method
         """
+        for t in range(self.y):
+            print()
         for r in range(self.height):
-            print("#" * self.width)
+            print( " " * self.x + "#" * self.width)
 
     def __str__(self):
         """
