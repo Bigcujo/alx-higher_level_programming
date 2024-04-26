@@ -45,3 +45,15 @@ class Square(Rectangle):
             for f, attrs in enumerate(attributesi):
                 if f < len(args):
                     setattr(self, attrs, args[f])
+
+        elif len(kwargs) > 0:
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                if key == "size":
+                    self.width = value
+                    self.height = value
+                if key == "x":
+                    self.x = value
+                if key == "y":
+                    self.y = value
