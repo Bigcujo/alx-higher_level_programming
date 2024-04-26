@@ -34,4 +34,14 @@ class Square(Rectangle):
         this is the sring representaion
         """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.height)
-
+    
+    def update(self, *args, **kwargs):
+        """
+        this is for the update method
+        """
+        if args:
+            atrributesi = ["id", "size", "x", "y"]
+            f = 0
+            for f, attrs in enumerate(attributesi):
+                if f < len(args):
+                    setattr(self, attrs, args[f])
