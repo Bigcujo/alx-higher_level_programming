@@ -115,3 +115,14 @@ class Rectangle(Base):
         this will be for the string representation of the rectangle.
         """
         return "[Rectangle] ({}) {}/{} - {}/{}". format(self.id, self.x, self.y,self.width, self.height)
+
+    def update(self, *args):
+        """
+        this will assign values to all the attributes.
+        """
+        if args:
+            attributesi = ["id", "width", "heigth", "x", "y"]
+            f = 0
+            for f, attrs in enumerate(attributesi):
+                if f < len(args):
+                    setattr(self, attrs, args[f])
