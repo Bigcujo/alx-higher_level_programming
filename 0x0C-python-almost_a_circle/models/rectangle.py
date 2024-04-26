@@ -121,7 +121,8 @@ class Rectangle(Base):
         this will assign values to all the attributes.
         """
         if args:
-            attributesi = ["id", "width", "heigth", "x", "y"]
+            attributesi = ["id", "width", "height", "x", "y"]
+            f = 0
             for f, attrs in enumerate(attributesi):
                 if f < len(args):
                     setattr(self, attrs, args[f])
