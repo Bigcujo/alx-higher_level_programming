@@ -147,7 +147,7 @@ class Rectangle(Base):
         """
 
         rect_dic = {
-                "x": self.id,
+                "x": self.x,
                 "y": self.y,
                 "id": self.id,
                 "height": self.height,
