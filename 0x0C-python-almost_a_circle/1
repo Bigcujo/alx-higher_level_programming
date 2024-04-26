@@ -69,4 +69,3 @@ class Square(Rectangle):
                 "size": self.height,
                 "y": self.y
                 }
-        return rect_dic
