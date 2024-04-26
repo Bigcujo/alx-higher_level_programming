@@ -116,7 +116,7 @@ class Rectangle(Base):
         """
         return "[Rectangle] ({}) {}/{} - {}/{}". format(self.id, self.x, self.y,self.width, self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         this will assign values to all the attributes.
         """
@@ -126,3 +126,17 @@ class Rectangle(Base):
             for f, attrs in enumerate(attributesi):
                 if f < len(args):
                     setattr(self, attrs, args[f])
+
+
+        elif len(kwargs) > 0:
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                if key == "width":
+                    self.width = value
+                if key == "height":
+                    self.height = value
+                if key == "y":
+                    self.y = value
+                if key == "x":
+                    self.x = value
