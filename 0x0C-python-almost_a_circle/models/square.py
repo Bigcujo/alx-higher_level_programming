@@ -14,6 +14,21 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
     
+    @property
+    def size(self):
+        """
+        this will be for the getther method
+        """
+        return self.height
+
+    @size.setter
+    def size(self, value):
+        """
+        this will be for the setter function
+        """
+        self.width = value
+        self.height = value
+
     def __str__(self):
         """
         this is the sring representaion
