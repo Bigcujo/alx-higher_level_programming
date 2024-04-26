@@ -40,7 +40,7 @@ class Square(Rectangle):
         this is for the update method
         """
         if args:
-            atrributesi = ["id", "size", "x", "y"]
+            attributesi = ["id", "size", "x", "y"]
             f = 0
             for f, attrs in enumerate(attributesi):
                 if f < len(args):
