@@ -1,6 +1,4 @@
 -- this will print all the cities in the databes hbtn_0d_usa.
-SELECT cities.`id`, cities.`name`, states.`name`
-  FROM `cities` AS c
-       JOIN `states` AS s
-       ON c.`state_id` = s.`id`
- ORDER BY c.`id`;
+SELECT cities.id, cities.name, states.name  FROM `cities` 
+JOIN `states` ON `cities.state_id` = `states.id`
+ORDER BY cities.id;
