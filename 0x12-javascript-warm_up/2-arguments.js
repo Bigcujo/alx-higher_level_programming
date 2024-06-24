@@ -1,8 +1,10 @@
 #!/usr/bin/node
 const args = process.argv.slice(2);
 const argsCount = args.length;
-if ( args < 1 ){
+if ( argsCount < 1 ){
     console.log('No argument');
-} else {
-    console.log('Arguments found');
+} else if ( argsCount === 1) {
+    console.log('Argument found');
+}else {
+    console.log('Arguments found')
 }
