@@ -2,7 +2,7 @@
 """
 this script does:
 - takes in a URL and sends a request to it
-- diplays the value of the response 
+- diplays the value of the response
 - using only the requests and sys psckage
 """
 import requests
