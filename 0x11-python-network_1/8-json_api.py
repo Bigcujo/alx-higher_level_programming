@@ -8,6 +8,10 @@ import sys
 import requests
 
 if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        print("Usage: ./script.py <letter>")
+        sys.exit(1)
+
     alpha = "" if len(sys.argv) == 1 else sys.argv[1]
     payload = {"q": alpha}
 
